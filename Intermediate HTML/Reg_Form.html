@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reg Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="First Name">First Name:</label>
+		<input id="First Name" type="text" name="First Name" required placeholder="John">
+
+		<label for="Last Name">Last Name:</label>
+		<input id="Last Name" type="text" name="Last Name" required placeholder="Smith">
+		<br>
+		<br>
+		<div>
+			<label for="Male">Male</label>
+			<input id="Male" type="radio" name="Gender" value="Male" required>
+		
+			<label for="Female">Female</label>
+			<input id="Female" type="radio" name="Gender" value="Female" required>
+		</div>
+		<br>
+		<div>
+		<label for="Email">Email:</label>
+		<input id="Email "type="email" name="Email" placeholder="abcd@example.com"  required>
+
+		<label for="Password">Password:</label>
+		<input id="Password "type="password" name="Password" pattern=".{5,10}" required title="Between 5 to 10 characters">
+		</div>
+		<br>
+
+		<label for="Birthday">Birthday:</label>
+		<select name="Month">
+			<option value="0" selected disabled>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>Aug</option>
+			<option>Sept</option>
+			<option>Oct</option>
+			<option>Noc</option>
+			<option>Dec</option>
+		</select>
+		<select name="Day">
+			<option value="0" selected disabled>Day</option>
+			<option>5</option>
+			<option>10</option>
+			<option>15</option>
+			<option>20</option>
+			<option>25</option>
+			<option>30</option>
+		</select>
+		<select name="Year">
+			<option value="0" selected disabled>Year</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+		</select>
+		<div>
+			<label>I agree to the terms above<input type="Checkbox" required></label>
+		</div>
+		
+		<input type="submit" >
+	</form>
+</body>
+</html>
