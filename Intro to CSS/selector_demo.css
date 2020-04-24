@@ -1,0 +1,31 @@
+/*Star Selector: select everything on the page*/
+*{
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector: Takes 2 or more selectors
+like taking anchor tags that are only in an <li>*/
+li a {
+	color: red;
+}
+
+/*Adjacent Selector: select elements that come after
+another element*/
+h4 + ul {
+	border: 4px solid red;
+}
+
+/*Attribute selector: select elements based 
+off any attribute*/
+a[href = "http://www.google.com"] {
+	background :green;
+}
+
+/*nth of type: takes a number and selects every nth
+of a specific element in the page*/
+li:nth-of-type(3){
+	background:purple;
+}
+li:nth-of-type(even){
+	background:green;
+}
