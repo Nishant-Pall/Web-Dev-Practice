@@ -11,3 +11,11 @@ colors.pop();
 
 var col = colors.pop();
 // col = yellow
+
+colors.unshift("infrared");
+
+colors.shift();
+
+// shift() also returns removed element
+
+var colo = colors.shift();
