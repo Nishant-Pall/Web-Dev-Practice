@@ -19,4 +19,12 @@ var ul = document.querySelector("ul");
 // innerHTML
 p.innerHTML;
 
-ul.innerHTML = "Plants are awesome"; 
+ul.innerHTML = "Plants are awesome";
+
+// Attributes
+
+var link = document.querySelector("a");
+
+link.setAttribute("href",'https://www.reddit.com');
+
+link.textContent = "Link to reddit";
