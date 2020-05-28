@@ -17,9 +17,9 @@ var ul = document.querySelector("ul");
 // ul.textContent = "blah blah blah"
 
 // innerHTML
-p.innerHTML;
+// p.innerHTML;
 
-ul.innerHTML = "Plants are awesome";
+// ul.innerHTML = "Plants are awesome";
 
 // Attributes
 
@@ -28,3 +28,17 @@ var link = document.querySelector("a");
 link.setAttribute("href",'https://www.reddit.com');
 
 link.textContent = "Link to reddit";
+
+var button = document.querySelector("button");
+
+button.addEventListener("click", function(){
+	h1.style.background = "purple"
+});
+
+var lis = document.querySelectorAll("li");
+
+for(var i =0; i<lis.length; i++){
+	lis[i].addEventListener("click", function(){
+		this.style.color = "pink";
+	});
+}
