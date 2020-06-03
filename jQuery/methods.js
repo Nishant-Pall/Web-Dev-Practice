@@ -15,3 +15,9 @@ $('img').css('width','200px');
 $('img').last().attr('src','https://ichef.bbci.co.uk/news/1024/cpsprodpb/11711/production/_100314417_1.jpg');
 
 $('input').val('rusty steele');
+
+$('h1').addClass('border').addClass('correct');
+
+$('li').first().toggleClass('border');
+
+$('li').toggleClass('border');
