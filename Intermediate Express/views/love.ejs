@@ -1,5 +1,4 @@
-<h1>You fell in love with:<%= thingVar.toUpperCase() %></h1>
-
+<%- include('partials/header');-%>
 <!-- wrapping of the tags are done at every javscript line -->
 <!-- The '=' sign is for something that is returned and is to be added to the html -->
 <% if(thingVar.toLowerCase()==="rusty"){ %>
@@ -9,3 +8,5 @@
 <% } %>
 
 <p>PS. This is the love.ejs file</p>
+
+<%- include('partials/footer');-%>
