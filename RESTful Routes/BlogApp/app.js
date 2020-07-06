@@ -87,6 +87,18 @@ app.put("/blogs/:id", (req ,res)=>{
 	})
 })
 
+// DELETE ROUTE
+app.delete("/blogs/:id", (req, res) =>{
+	// Destroy blog
+	Blog.findByIdAndRemove(req.params.id, (err)=>{
+		if(err){
+			res.redirect("/blogs")
+		} else{
+			res.redirect("/blogs")
+		}
+	})
+})
+
 app.listen(3000, ()=>{
 	console.log("Server is running!!")
 })
